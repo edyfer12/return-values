@@ -1,51 +1,25 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en-us">
+  <head>
     <meta charset="utf-8">
-    <title>My Own Page</title>
-</head>
+    <meta name="viewport" content="width=device-width">
+    <title>Function library example</title>
+  <style>
+    input {
+      font-size: 2em;
+      margin: 10px 1px 0;
+    }
+  </style>
+  </head>
 <body>
-    <!-- Add a text box -->
-    <input type="text" id="textbox" />
 
-    <!-- Add a paragraph -->
-    <p></p>
+  <input class="numberInput" type="text">
+  <p></p>
 
-    <!-- Add a script tag -->
-    <script>
-        //Create a variable to store a reference to the textbox
+  <script>
+    const input = document.querySelector('.numberInput');
+    const para = document.querySelector('p');
 
-        let num = document.querySelector('text');
-
-        //Create a variable to store a reference to the paragraph
-
-        let output = document.querySelector('p');
-
-        //Declare a function
-
-        function cube (num) { 
-
-            //Inside a function, return the cubed value
-            return num * num * num;
-
-        }
-
-        //Declare a function
-
-        function square (num) {
-            
-            //Inside a function, return the squared value
-        
-            return num * num;
-        }
-
-        //Invoke a function that returns a cubed value and assign the return value to the variable
-        output.textContent = cube (num);
-
-        //Invoke a function that returns a squared value and assign the return value to the variable
-        output.textContent = square (num);
-
-
-    </script>
+  </script>
 </body>
 </html>
