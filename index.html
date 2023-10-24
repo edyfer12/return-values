@@ -87,20 +87,26 @@
 
         //Add an else if statement if value is more than 0 and is an integer
         else if (num > 0) {
+          //Declare a variable
+          let counter = num;
+
           //Add a while loop that aims to multiply previous values as value is more than 0
-          while(num > 0){
+          while(counter > 1){
             //Add multiply assignment operator on the num variable
-            num *= num;
+            num *= (counter - 1);
             //Decrement the num variable by 1
-            num--;
+            counter--;
           }
           //Add return value
+          return num;
         }
 
 
         //Add an else statement 
-
+        else {
           //Return value as undefined
+          return undefined;
+        }
 
 
     }
