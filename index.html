@@ -39,15 +39,15 @@
 
         //Create an if statement when the user types in a number that is non-numeric
         if(isNaN(num)) {
-            //Display the statement to the paragraph
+            //Display the statement to the first paragraph
             firstPara.textContent = 'Please enter a number'; 
         }
 
         //Add an else when user types in numeric value
         else {
-            //Display the statement to the paragraph
+            //Display the statement to the first paragraph
             firstPara.textContent = `${num} squared is ${square(num)}. `;
-            //Display the statement to the paragraph and assign the previous value
+            //Display the statement to the second paragraph
             secondPara.textContent = `${num} cubed is ${cube(num)}. `;
         }
 
